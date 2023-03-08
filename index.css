@@ -1,0 +1,29 @@
+*{
+    box-sizing: border-box;
+}
+
+.masik{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+div.masik div{
+    border: 1px solid black;
+    padding: 5px;
+    flex:0 0 calc(33% - 5px); 
+}
+
+.hatter{
+    background-color: aqua;
+    
+}
+
+
+@media screen and (max-width: 400px) {
+    div.masik div{
+        flex: 0 0 calc(50% - 5px)
+    }
+}
+
+
